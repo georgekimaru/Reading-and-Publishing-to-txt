@@ -9,7 +9,7 @@ def isPrime(n):
         return True
 
 # sum of digits of a number
-def sumDigit(n):
+def sumOfDigit(n):
     s = 0
     while n > 0:
         d = n % 10
@@ -33,8 +33,8 @@ def assignment():
         f.write(str(r) + "\n")
         if isPrime(r):
             prime.write(str(r) + "\n")
-        if sumDigit(r) > maxSumOfDigit:
-            maxSumOfDigit = sumDigit(r)
+        if sumOfDigit(r) > maxSumOfDigit:
+            maxSumOfDigit = sumOfDigit(r)
             num=r
 
     f.close()
