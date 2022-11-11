@@ -8,7 +8,7 @@ def isPrime(n):
     else:
         return True
 
-
+# sum of digits of a number
 def sumDigit(n):
     s = 0
     while n > 0:
@@ -18,10 +18,12 @@ def sumDigit(n):
     return s
 
 
-def extra_assignment1():
+def assignment():
     f = open("test.txt", "w")
     prime = open("prime.txt", "w")
     n = int(input("How many numbers are needed to write to the file: "))
+    # Main lab: random.seed(1)
+    # Assignment 1: random.seed(2)
     random.seed(2)
     maxSumOfDigit = -1
     num=0
@@ -38,7 +40,7 @@ def extra_assignment1():
     f.close()
     prime.close()
 
-    # read file and show
+    # read file and output to console
 
     f = open("test.txt", "r")
     prime = open("prime.txt", "r")
@@ -59,4 +61,4 @@ def extra_assignment1():
     prime.close()
 
 
-extra_assignment1()
+assignment()
